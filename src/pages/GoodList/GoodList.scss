@@ -1,0 +1,91 @@
+.page-goodlist {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Segoe UI, Arial, Roboto, PingFang SC,
+        miui, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+    .item-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .products {
+        color: #323233;
+        font-size: 12px;
+
+        .product-item {
+            display: flex;
+            align-items: flex-start;
+
+            .thumb {
+                position: relative;
+                -webkit-box-flex: 0;
+                -webkit-flex: none;
+                flex: none;
+                width: 88px;
+                height: 88px;
+                margin-right: 8px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    .product-info {
+        .product-name {
+            max-height: 32px;
+            font-weight: 500;
+            line-height: 16px;
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+        }
+
+        .price {
+            padding-top: 20px;
+
+            span {
+                &:first-child {
+                    display: inline-block;
+                    color: #1989fa;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                &:nth-child(2) {
+                    color: #1989fa;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                &:last-child {
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: #969799;
+                    font-size: 10px;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+    .box-sale {
+        display: inline-block;
+
+        .sale {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: #3578e5;
+            height: 24px;
+            padding: 0 4px;
+            font-size: 10px;
+            font-weight: bolder;
+        }
+    }
+}
